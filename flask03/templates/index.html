@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ja">
+ <head>
+  <meta charset="utf-8">
+  <title>Upload</title>
+ </head>
+ <body>
+  <div>ファイル1つ</div>
+  <form action="/upload" enctype="multipart/form-data" method="post">
+   <input type="file" name="file"><br>
+   <button>アップロード</button>
+  </form>
+  <div>複数ファイル</div>
+  <form action="/upload-files" enctype="multipart/form-data" method="post">
+   <input type="file" multiple name="files"><br>
+   <button>アップロード</button>
+  </form>
+ </body>
+</html>
